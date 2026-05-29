@@ -1,0 +1,605 @@
+/*.contenedor{
+
+    /*background-color: rgb(65, 255, 223);*/
+  /*  padding: 5px;
+    margin: 1px;
+    /*border: 15px solid red(255,0,0);*/
+  /*  display: flex;
+    justify-content: center;
+}
+.caja{
+    /*background-color: rgb(100, 183, 255);*/
+   /* border: 1px solid rgb(0, 89, 255);
+    font-size: 20px;
+    padding: 1px;
+    border: 3px solid rgb(0, 140, 255);
+    margin: 5px;
+    width: 400px;
+    height: 11S0px;
+    text-align: center;
+    text-transform: capitalize;
+    /*text-shadow: 2px 2px 4px #000000:*/
+   /* text-shadow: 0 0 10px white, 0 0 20px rgb(255, 0, 221);
+    text-decoration: underline red wavy;
+    /*este es un mensaje*/
+body {
+  animation: rotate-bg-color 10s infinite;
+}
+
+@keyframes rotate-bg-color {
+  0% {
+    background-color: rgb(197, 229, 255);
+  }
+  10% {
+    background-color: rgb(255, 170, 170);
+  }
+  20% {
+    background-color: rgb(255, 252, 83);
+  }
+  30% {
+    background-color: rgb(197, 161, 0);
+  }
+  40% {
+    background-color: rgb(151, 255, 151);
+  }
+  50% {
+    background-color: rgb(0, 0, 255);
+  }
+  60% {
+    background-color: rgb(149, 0, 255);
+  }
+  70% {
+    background-color: rgb(247, 199, 247);
+  }
+  80% {
+    background-color: rgb(133, 56, 69);
+  }
+  90% {
+    background-color: rgb(255, 66, 66);
+  }
+  100% {
+    background-color: rgb(184, 182, 182);
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+background-image:url("imagenes/Fondo.gif");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+min-height:100vh;
+
+overflow-x:hidden;
+}
+
+/* ANIMACION DEL FONDO */
+
+@keyframes fondo{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+
+    padding: 1px;
+    width: 10px;
+    /*border: 3px solid black;*/
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100%;
+    padding-right: 10px;
+    position: absolute;
+    right: -50px;
+    top: 170px;
+
+}
+
+/* CAJAS */
+
+/*.caja{
+
+    width: 610px;
+    min-height: 90px;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
+    cursor: pointer;
+     margin: 5px 0;
+}
+
+/* EFECTO HOVER */
+
+/*.caja:hover{
+
+    transform: scale(1.05) rotate(-1deg);
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+/* IMAGENES */
+
+/*.caja img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+/* EFECTO IMAGEN */
+
+/*.caja:hover img{
+
+    transform: rotate(12deg) scale(1.15);*/
+/* ========================= */
+/*          CAJAS            */
+/* ========================= */
+
+.caja{
+
+width:610px;
+
+min-height:90px;
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+padding:25px;
+
+font-size:28px;
+
+font-weight:bold;
+
+color:white;
+
+transition:0.4s;
+
+margin:8px 0;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* ========================= */
+/*        TARJETA 1          */
+/* ========================= */
+
+.link-caja:nth-child(1) .caja{
+
+background:linear-gradient(
+135deg,
+#ff0080,
+#7928ca
+);
+
+border-radius:80px;
+
+box-shadow:
+0 0 20px #ff0080;
+
+}
+
+/* ========================= */
+/*        TARJETA 2          */
+/* ========================= */
+
+.link-caja:nth-child(2) .caja{
+
+background:linear-gradient(
+135deg,
+#00dbde,
+#fc00ff
+);
+
+clip-path:polygon(
+0 0,
+100% 0,
+95% 100%,
+0 100%
+);
+
+}
+
+/* ========================= */
+/*        TARJETA 3          */
+/* ========================= */
+
+.link-caja:nth-child(3) .caja{
+
+background:linear-gradient(
+135deg,
+#00ff99,
+#0066ff
+);
+
+border-radius:30px;
+
+transform:rotate(-1deg);
+
+}
+
+/* ========================= */
+/*        TARJETA 4          */
+/* ========================= */
+
+.link-caja:nth-child(4) .caja{
+
+background:linear-gradient(
+135deg,
+#ff512f,
+#dd2476
+);
+
+border-left:8px solid white;
+
+}
+
+/* ========================= */
+/*        TARJETA 5          */
+/* ========================= */
+
+.link-caja:nth-child(5) .caja{
+
+background:linear-gradient(
+135deg,
+#f7971e,
+#ffd200
+);
+
+border-radius:
+50px 10px
+50px 10px;
+
+}
+
+/* ========================= */
+/*        TARJETA 6          */
+/* ========================= */
+
+.link-caja:nth-child(6) .caja{
+
+background:linear-gradient(
+135deg,
+#11998e,
+#38ef7d
+);
+
+transform:skew(-3deg);
+
+}
+
+/* ========================= */
+/*        TARJETA 7          */
+/* ========================= */
+
+.link-caja:nth-child(7) .caja{
+
+background:linear-gradient(
+135deg,
+#fc466b,
+#3f5efb
+);
+
+clip-path:polygon(
+5% 0,
+100% 0,
+95% 100%,
+0 100%
+);
+
+}
+
+/* ========================= */
+/*        TARJETA 8          */
+/* ========================= */
+
+.link-caja:nth-child(8) .caja{
+
+background:linear-gradient(
+135deg,
+#7f00ff,
+#e100ff
+);
+
+border-radius:20px;
+
+}
+
+/* ========================= */
+/*        TARJETA 9          */
+/* ========================= */
+
+.link-caja:nth-child(9) .caja{
+
+background:linear-gradient(
+135deg,
+#00c6ff,
+#0072ff
+);
+
+transform:rotate(1deg);
+
+}
+
+/* ========================= */
+/*          HOVER            */
+/* ========================= */
+
+.caja:hover{
+
+transform:
+scale(1.05)
+translateY(-5px);
+
+box-shadow:
+0 0 30px white;
+
+}
+
+/* ========================= */
+/*         IMAGENES          */
+/* ========================= */
+
+.caja img{
+
+width:45px;
+
+height:45px;
+
+border-radius:12px;
+
+object-fit:cover;
+
+transition:0.4s;
+
+}
+
+/* HOVER IMG */
+
+.caja:hover img{
+
+transform:scale(1.12);
+
+}
+
+  
+.banner{
+
+    width: 100%;
+    height: 200px;
+    background: rgba(0, 255, 255, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*border-bottom: 3px solid rgb(255, 0, 0);*/
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+/* LOGO */
+
+.logo-cobach{
+
+    width: 225px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    filter: drop-shadow(0 0 15px rgb(0, 255, 255));
+}
+
+/* TEXO */
+
+.texto-banner{
+
+    text-align: center;
+    color: rgb(0, 255, 98);
+}
+
+.texto-banner h1{
+
+    font-size: 38px;
+    text-shadow: 0 0 15px rgb(0, 68, 255);
+}
+
+.texto-banner p{
+
+    font-size: 22px;
+    color: rgb(68, 0, 255);
+}
+.link-caja{
+
+    text-decoration: none;
+}
+/* ========================= */
+/*      CONTENEDOR PDF       */
+/* ========================= */
+
+.contenedor-pdf{
+
+width:100%;
+
+display:flex;
+justify-content:flex-start;
+
+padding-left:80px;
+
+margin-top:40px;
+
+}
+
+/* ========================= */
+/*        PDF IMAGEN         */
+/* ========================= */
+
+.pdf-imagen{
+
+display:flex;
+justify-content:center;
+
+margin-top:20px;
+margin-bottom:50px;
+
+}
+
+.pdf-imagen img{
+
+width:75%;
+max-width:750px;
+
+border-radius:20px;
+
+box-shadow:
+0 0 20px rgba(255,255,255,0.4);
+
+transition:0.4s;
+
+}
+
+/* HOVER PDF */
+
+/*.pdf-imagen img:hover{
+
+transform:scale(1.02);
+
+box-shadow:
+0 0 25px rgb(0,255,255);
+
+}*/
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+@media(max-width:900px){
+
+/* BANNER */
+
+.banner{
+
+height:auto;
+
+padding:20px;
+
+flex-direction:column;
+
+}
+
+/* LOGO */
+
+.logo-cobach{
+
+position:static;
+
+width:140px;
+
+margin-bottom:15px;
+
+}
+
+/* TITULOS */
+
+.texto-banner h1{
+
+font-size:24px;
+
+text-align:center;
+
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+
+position:static;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+/* CAJAS */
+
+.caja{
+
+width:90%;
+
+font-size:18px;
+
+padding:15px;
+
+min-height:80px;
+
+}
+
+/* IMAGENES */
+
+.caja img{
+
+width:50px;
+height:50px;
+
+}
+
+/* PDF */
+
+.pdf-imagen img{
+
+width:95%;
+
+}
+
+/* BOTON */
+
+.contenedor-pdf{
+
+justify-content:center;
+
+padding-left:0;
+
+}
+
+}
